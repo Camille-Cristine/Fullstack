@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="static/style.css">
+    <title>AC_01</title>
+    
+</head>
+<body>
+    
+    <h1>Aprovado ou reprovado</h1>
+    <div>
+        <form method="get">
+            <h2>Sua primeira nota:</h2>
+            <input type="text" name="nota1">
+            <br>
+            <h2>Sua segunda Nota</h2>
+            <input type="text" name="nota2">
+            <br>
+            <input id="button" type="submit" value="Enviar">
+        </form> 
+    </div>
+    
+    {% if resultado %}
+    <div id="div-resultado">
+       <strong> {{resultado}} com média {{media}}!! </strong>
+    </div>
+    {% endif %}
+
+</body>
+</html>
